@@ -34,6 +34,5 @@ public class Deserilization {
 				                           .as(type);
 
 		System.out.println("javaobject1:" + blogPostsList);
-
 	}
 }
