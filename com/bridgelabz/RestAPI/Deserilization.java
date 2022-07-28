@@ -21,8 +21,8 @@ public class Deserilization {
 		String urlString = "http://localhost:3000/posts/17";
 
 		BlogPosts blogPosts17 = RestAssured.given()
-											.get(urlString)
-											.as(BlogPosts.class);
+					           .get(urlString)
+        					   .as(BlogPosts.class);
 
 		System.out.println("javaobject:" + blogPosts17);
 
@@ -31,7 +31,7 @@ public class Deserilization {
 		Type type = new TypeReference<List<BlogPosts>>() {}.getType();
 		
 		List<BlogPosts> blogPostsList = RestAssured.get(urlString1)
-				                                   .as(type);
+				                           .as(type);
 
 		System.out.println("javaobject1:" + blogPostsList);
 
